@@ -2,11 +2,11 @@
 
 Which UNIX day is it today? `ud` can let you know!
 
-This README.md file was written on UNIX day `19553` (which is `2023-07-15`).
+UNIX days are calculated from the current UNIX time, which is the number of seconds since January 1st, 1970 at 00:00:00 UTC.
 
-UNIX day `20000` is at `2024-10-04` (the 4th of October).
+UNIX day `20000` is at **2024**-10-04 (the 4th of October). It's a special day, since the next round UNIX day is `30000` at **2052**-02-20.
 
-The next round UNIX day is `30000` at 2052-02-20, so the 4th of October 2024 is a special day!
+This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 ### The `ud` utility can
 
