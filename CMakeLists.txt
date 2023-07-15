@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(ud)
+set(TARGET ud PROPERTY C_STANDARD 18)
+set(SOURCES main.c)
+add_executable(ud ${SOURCES})
+set(CMAKE_C_COMPILER gcc)
+set(CMAKE_C_FLAGS "-O2 -pipe -fPIC -fno-plt -fstack-protector-strong -Wall -Wshadow -Wpedantic -Wno-parentheses -Wvla -Wignored-qualifiers")
+add_definitions(-D_GNU_SOURCE)
