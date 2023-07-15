@@ -4,7 +4,9 @@ Which UNIX day is it today? `ud` can let you know!
 
 This README.md file was written on UNIX day `19553` (which is `2023-07-15`).
 
-UNIX day `20000` is at `2024-10-04` (the 4th of October), and should surely be celebrated!
+UNIX day `20000` is at `2024-10-04` (the 4th of October).
+
+The next round UNIX day is `30000` at 2052-02-20, so the 4th of October 2024 is a special day!
 
 ### The `ud` utility can
 
