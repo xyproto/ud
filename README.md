@@ -10,9 +10,9 @@ This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 ### The `ud` utility can
 
-* Output the UNIX day number for today.
-* Take a UNIX day number and return the corresponding date.
-* Take a date and return the UNIX day number.
+* Output the UNIX day for today.
+* Take a UNIX day and return the corresponding date.
+* Take a date and return the UNIX day.
 
 ## Build
 
