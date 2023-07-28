@@ -38,6 +38,6 @@ This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 ## General info
 
-* Version: 1.0.0
+* Version: 1.0.1
 * License: BSD-3
 * Author: Alexander F. Rødseth &lt;xyproto@archlinux.org&gt;
