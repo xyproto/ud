@@ -1,9 +1,9 @@
+#include <err.h>
 #include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <err.h>
 
 const int SECONDS_PER_DAY = 86400;
 const char VERSION[] = "1.1.0";
@@ -33,13 +33,11 @@ void print_usage(char* program_name)
 }
 
 // Convert date string to UNIX day
-int64_t date_string_to_unix_day(char* date_string, char *program_name)
+int64_t date_string_to_unix_day(char* date_string, char* program_name)
 {
     struct tm tm = { 0 };
 
-    if (!strptime(date_string, "%Y-%m-%d", &tm) &&
-        !strptime(date_string, "%d.%m.%Y", &tm) &&
-        !strptime(date_string, "%m/%d/%Y", &tm)) {
+    if (!strptime(date_string, "%Y-%m-%d", &tm) && !strptime(date_string, "%d.%m.%Y", &tm) && !strptime(date_string, "%m/%d/%Y", &tm)) {
         fprintf(stderr, "Invalid date or unknown argument: %s\n", date_string);
         print_usage(program_name);
         exit(EXIT_FAILURE);
@@ -47,15 +45,15 @@ int64_t date_string_to_unix_day(char* date_string, char *program_name)
 
     tm.tm_hour = tm.tm_min = tm.tm_sec = 0; // Ensure the time is 00:00:00
     time_t t = timegm(&tm); // interpret the input as UTC, not local time
-    return t/SECONDS_PER_DAY;
+    return t / SECONDS_PER_DAY;
 }
 
 int main(int argc, char* argv[])
 {
-	if (argc == 1) {
-        printf("%" PRIi64 "\n", time(NULL)/SECONDS_PER_DAY);
+    if (argc == 1) {
+        printf("%" PRIi64 "\n", time(NULL) / SECONDS_PER_DAY);
         return EXIT_SUCCESS;
-	}
+    }
     if (strcmp(argv[1], "--help") == 0) {
         print_usage(argv[0]);
         return EXIT_SUCCESS;
