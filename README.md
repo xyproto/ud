@@ -39,4 +39,4 @@ This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 * Version: 1.1.0
 * License: BSD-3
-* Author: Alexander F. Rødseth &lt;xyproto@archlinux.org&gt;
+* Authors: Alexander F. Rødseth &lt;xyproto@archlinux.org&gt; and Oliver Webb &lt;aquahobbyist@proton.me&gt;
