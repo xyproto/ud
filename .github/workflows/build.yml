@@ -22,7 +22,7 @@ jobs:
             cpp_compiler: clang++
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v4
 
     - name: Set reusable strings
       id: strings
