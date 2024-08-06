@@ -16,9 +16,9 @@ This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 ## Build
 
-### With CMake
+### With CMake and Make
 
-    cmake -S . -B build --build build
+    cmake -B build -S . && make -C build
 
 ### With gcc
 
