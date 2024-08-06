@@ -6,7 +6,7 @@
 #include <err.h>
 
 const int SECONDS_PER_DAY = 86400;
-const char VERSION[] = "1.0.1";
+const char VERSION[] = "1.1.0";
 const size_t DATE_STR_SIZE = 16; // YYYY[YYYYY]-MM-DD\0
 
 // Convert UNIX day to formatted date
