@@ -13,7 +13,7 @@ const size_t DATE_STR_SIZE = 16; // YYYY[YYYYY]-MM-DD\0
 char* unix_day_to_date(int64_t ud)
 {
     time_t rawtime = ud * SECONDS_PER_DAY;
-    struct tm* timeinfo = gmtime(&rawtime);;
+    struct tm* timeinfo = gmtime(&rawtime);
     char* buffer = (char*)malloc(DATE_STR_SIZE);
 
     if (!buffer || !timeinfo) {
