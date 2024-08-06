@@ -16,10 +16,9 @@ This README.md file was written on UNIX day `19553` (which is 2023-07-15).
 
 ## Build
 
-### With CMake and Ninja
+### With CMake
 
-    cmake -S . -B build -G Ninja
-    ninja -C build
+    cmake -S . -B build --build build
 
 ### With gcc
 
