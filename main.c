@@ -1,5 +1,6 @@
 #include <err.h>
 #include <inttypes.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,6 +66,8 @@ int main(int argc, char* argv[])
 
     char* end;
     int64_t date_flag = strtoll(argv[1], &end, 10);
+    if (date_flag == LLONG_MAX)
+        err(EXIT_FAILURE, "Date conversion failed");
 
     if (*end == '\0') { // The argument was a UNIX day number
         char* date = unix_day_to_date(date_flag);
