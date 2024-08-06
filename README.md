@@ -1,4 +1,4 @@
-# UD
+# `ud`
 
 Which UNIX day is it today? `ud` can let you know!
 
